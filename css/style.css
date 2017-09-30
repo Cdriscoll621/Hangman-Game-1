@@ -1,0 +1,198 @@
+*{
+	font-family: 'VT323', monospace;
+}	
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: Black;
+}
+#container{
+	width: 1024px;
+	margin: 0 auto;
+}
+
+#container > h1{
+	color: #21FF06;
+	text-align: center;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-shadow: 0px 0px 3px white;
+	font-size: 600%;
+
+}
+
+#gameBoard{
+	box-sizing: border-box;
+	width: 100%;
+}
+
+#middle{
+	display: flex;
+	width: 100%;
+	height: 600px;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#bottom{
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: space-around;
+
+}
+
+#wordBox{
+	box-shadow: 0px 0px 7px white;
+	font-size: 300%;
+	background-color: Black;
+	color: #21FF06;
+	border-color: #21FF06;
+	box-sizing: border-box;
+	text-shadow: 0px 0px 3px white;
+	border-style: solid;
+	border-radius: 30px;
+	flex-basis: 65%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: flex-end;
+	letter-spacing: 3.5px;
+	margin: 5px;
+}
+
+
+
+#playAgain{
+	box-shadow: 0px 0px 7px white;
+	visibility: hidden;
+	background-color: Black;
+	border-color: #21FF06;
+	color: #21FF06;
+	font-size: 100%;
+	text-shadow: 0px 0px 3px white;
+	border-radius: 10px;
+	padding: 5px;
+	width: 275px;
+	height: 60px;
+}
+
+#hangmanImage{
+	box-shadow: 0px 0px 7px white;
+	color: #21FF06;
+	border-color: #21FF06;
+	box-sizing: border-box;
+	border-style: solid;
+	border-radius: 30px;
+	margin: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+
+#badLetters{
+	box-shadow: 0px 0px 5px white;
+	text-shadow: 0px 0px 3px white;
+	font-size: 250%;
+	background-color: Black;
+	color: #21FF06;
+	border-color: #21FF06;
+	box-sizing: border-box;
+	border-style: solid;
+	border-radius: 15px;
+	margin: 5px;
+	flex-basis: 65%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+
+#scoreBox{
+	box-shadow: 0px 0px 5px white;
+	text-shadow: 0px 0px 3px white;
+	font-size: 300%;
+	background-color: Black;
+	color: #21FF06;
+	border-color: #21FF06;
+	box-sizing: border-box;
+	border-style: solid;
+	border-radius: 15px;
+	margin: 5px;
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#theHangMan{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#head{
+	visibility: hidden;
+	top: 75px;
+	left: 110px;
+	position: absolute;
+	background-color: #21FF06;
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+
+}
+
+#torso{
+	visibility: hidden;
+	position: absolute;
+	left: 158px;
+	top: 175px;
+	background-color: #21FF06;
+	width: 5px;
+	height: 100px;
+}
+
+
+
+#arms{
+	width: 100px;
+	height: 100px;
+	transform: rotate(45deg);
+	border-bottom: transparent;
+	border-right: transparent;
+	border-left: transparent;
+	border-top: transparent;
+	border-width: 5px;
+	border-style: solid;
+	left: 106px;
+	top: 85px;
+	position: absolute;
+}
+
+
+#legs{
+	width: 100px;
+	height: 100px;
+	transform: rotate(45deg);
+	border-bottom: transparent;
+	border-right: transparent;
+	border-left: transparent;
+	border-top: transparent;
+	border-width: 5px;
+	border-style: solid;
+	margin: 15px;
+	left: 90px;
+	top: 275px;
+	position: absolute;
+}
+
+
+
